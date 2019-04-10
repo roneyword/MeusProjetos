@@ -1,0 +1,439 @@
+html,
+body {
+  font-family: 'Roboto', sans-serif !important; }
+
+.bg-preto {
+  background-color: black; }
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white; }
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: white; }
+
+.nav-item {
+  padding: 0px 30px; }
+
+/* ---------------- EFEITO DA BORDA DO NAVBAR ----------------*/
+.nav-underline {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+  -moz-transform: perspective(1px) translateZ(0);
+  -ms-transform: perspective(1px) translateZ(0);
+  -o-transform: perspective(1px) translateZ(0); }
+  .nav-underline::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: #91DC5A;
+    height: 2px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+  .nav-underline:hover::before, .nav-underline:focus::before, .nav-underline:active::before {
+    left: 0;
+    right: 0; }
+
+.bn-parallax-sobre {
+  min-height: 600px;
+  background-image: url("../img/restaurante-parallax.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed; }
+  .bn-parallax-sobre .bn-titulo {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white; }
+    .bn-parallax-sobre .bn-titulo h1 {
+      text-align: center;
+      font-size: 5rem; }
+    .bn-parallax-sobre .bn-titulo h3 {
+      font-size: 2rem; }
+
+@media screen and (max-width: 576px) {
+  .bn-titulo h1 {
+    font-size: 3rem !important; }
+
+  .bn-titulo h3 {
+    font-size: 2rem !important; } }
+#voltarAoTopo {
+  width: 80px;
+  height: 50px;
+  z-index: 1;
+  position: fixed;
+  right: 20px;
+  bottom: -80px; }
+
+.tel-transparente {
+  border: none !important;
+  background-color: rgba(0, 0, 0, 0) !important;
+  outline: none !important; }
+
+.tel-transparente:active {
+  border: none !important;
+  outline: none !important; }
+
+.tel-transparente:visited {
+  border: none !important;
+  outline: none !important; }
+
+.tel-transparente:focus {
+  border: none !important;
+  outline: none !important; }
+
+.tel-transparente:hover {
+  cursor: pointer; }
+
+@media screen and (max-width: 767px) {
+  #voltarAoTopo {
+    right: 20px;
+    bottom: -50px; } }
+/* ---------------- FINAL DO BOTAO TELEFONE RAPIDO ----------------*/
+.img-sobre {
+  height: 200px;
+  width: 280px;
+  margin: 2px 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px; }
+
+@media screen and (max-width: 576px) {
+  .img-sobre {
+    height: 100px !important;
+    width: 150px !important; } }
+@media screen and (max-width: 767px) {
+  .img-sobre {
+    height: 200px;
+    width: 250px; } }
+.bn-parallax-preco {
+  min-height: 400px;
+  background-image: url("../img/preco-parallax.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed; }
+  .bn-parallax-preco .bn-preco {
+    position: relative;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white; }
+    .bn-parallax-preco .bn-preco h1 {
+      text-align: center;
+      font-size: 5rem; }
+    .bn-parallax-preco .bn-preco span {
+      height: 2px;
+      width: 200px;
+      color: white;
+      background-color: white; }
+
+@media screen and (max-width: 576px) {
+  .bn-preco h1 {
+    font-size: 3rem !important; } }
+.pills ul {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; }
+  .pills ul li {
+    list-style: none; }
+    .pills ul li a {
+      padding: 15px 20px;
+      color: black; }
+      .pills ul li a:hover, .pills ul li a:focus, .pills ul li a:active {
+        text-decoration: none;
+        border: 1px solid black; }
+
+.img-cardapio {
+  position: relative;
+  height: 300px;
+  width: 280px;
+  margin-bottom: 5px; }
+  .img-cardapio .img-carda {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px; }
+  .img-cardapio .cardapio-icons {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px; }
+    .img-cardapio .cardapio-icons i {
+      padding: 10px 10px;
+      background-color: white;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      visibility: hidden; }
+      .img-cardapio .cardapio-icons i:hover {
+        cursor: pointer; }
+    .img-cardapio .cardapio-icons .like {
+      position: absolute;
+      top: 10px;
+      left: 10px; }
+    .img-cardapio .cardapio-icons .carrinho {
+      position: absolute;
+      top: 10px;
+      right: 10px; }
+    .img-cardapio .cardapio-icons p {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      color: white;
+      visibility: hidden; }
+  .img-cardapio:hover i {
+    visibility: visible; }
+  .img-cardapio:hover p {
+    visibility: visible; }
+
+@media screen and (max-width: 576px) {
+  .img-cardapio {
+    height: 230px !important;
+    width: 150px !important; } }
+@media screen and (max-width: 767px) {
+  .img-cardapio {
+    height: 230px;
+    width: 170px; } }
+.bn-parallax-cerveja {
+  min-height: 400px;
+  background-image: url("../img/cerveja-parallax.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed; }
+
+.bn-cerveja {
+  position: relative;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white; }
+  .bn-cerveja h1 {
+    text-align: center;
+    font-size: 5rem; }
+  .bn-cerveja span {
+    height: 2px;
+    width: 200px;
+    color: white;
+    background-color: white; }
+
+@media screen and (max-width: 576px) {
+  .bn-cerveja h1 {
+    font-size: 3rem; } }
+.img-cerveja {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px; }
+
+.bn-parallax-cafe {
+  min-height: 400px;
+  background-image: url("../img/cafe-parallax.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed; }
+
+.bn-cafe {
+  position: relative;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white; }
+  .bn-cafe h1 {
+    text-align: center;
+    font-size: 5rem; }
+  .bn-cafe span {
+    height: 2px;
+    width: 200px;
+    color: white;
+    background-color: white; }
+
+@media screen and (max-width: 576px) {
+  .bn-cafe h1 {
+    font-size: 3rem; } }
+.bn-parallax-destaque {
+  min-height: 400px;
+  background-image: url("../img/destaque-parallax.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed; }
+
+.bn-destaque {
+  position: relative;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white; }
+  .bn-destaque h1 {
+    text-align: center;
+    font-size: 5rem; }
+  .bn-destaque span {
+    height: 2px;
+    width: 200px;
+    color: white;
+    background-color: white; }
+
+@media screen and (max-width: 576px) {
+  .bn-destaque h1 {
+    font-size: 3rem; } }
+.bn-parallax-reserva {
+  min-height: 400px;
+  background-image: url("../img/destaque-parallax.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed; }
+
+.bn-reserva {
+  position: relative;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white; }
+  .bn-reserva h1 {
+    text-align: center;
+    font-size: 5rem; }
+  .bn-reserva span {
+    height: 2px;
+    width: 200px;
+    color: white;
+    background-color: white; }
+
+@media screen and (max-width: 576px) {
+  .bn-reserva h1 {
+    font-size: 3rem !important; }
+
+  .mt-cel {
+    margin-top: 1rem !important; } }
+@media screen and (max-width: 767px) {
+  .mt-cel {
+    margin-top: 1rem !important; }
+
+  .mt-cel {
+    margin-top: 1rem !important; } }
+.bn-parallax-mensagem {
+  min-height: 400px;
+  background-image: url("../img/destaque-parallax.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed; }
+
+.bn-mensagem {
+  position: relative;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white; }
+  .bn-mensagem h1 {
+    text-align: center;
+    font-size: 5rem; }
+  .bn-mensagem span {
+    height: 2px;
+    width: 200px;
+    color: white;
+    background-color: white; }
+
+@media screen and (max-width: 576px) {
+  .bn-mensagem h1 {
+    font-size: 3rem; } }
+.box-social {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column; }
+  .box-social .link-social {
+    margin-top: 20px; }
+    .box-social .link-social ul {
+      display: flex;
+      flex-direction: row;
+      padding: 0px;
+      margin: 0px; }
+      .box-social .link-social ul li {
+        list-style: none;
+        margin-left: 15px; }
+        .box-social .link-social ul li a {
+          color: white; }
+          .box-social .link-social ul li a:hover i {
+            background-color: lightgray; }
+          .box-social .link-social ul li a i {
+            color: black;
+            padding: 15px;
+            background-color: white;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%; }
+
+.btn-topo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  .btn-topo i {
+    font-size: 4rem;
+    margin-bottom: 10px; }
+    .btn-topo i:hover {
+      cursor: pointer;
+      color: white; }
+
+.box-contato {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column; }
+
+@media screen and (max-width: 767px) {
+  .box-contato {
+    align-items: center !important; }
+
+  .box-social {
+    align-items: center !important; }
+
+  .my-cel {
+    margin: 3rem 0px; } }
+
+/*# sourceMappingURL=estilo.css.map */

@@ -1,0 +1,406 @@
+/* =================== CONFIGURAÇÕES DO HTML E BODY =================== */
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* =================== FONTE PARA TITULOS =================== */
+h1, h2, h3, h4, h5{
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+/*=================== CONTAINER 1 ======================================*/
+.container1{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.left {
+	position: relative;
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	z-index: 100;
+}
+.right {
+	position: relative;
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	z-index: 100;
+}
+
+.box {
+	width: 50%;
+	height: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.box-1 {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*=================== IMAGEM DE FUNDO SERVICO =================== */
+.img-servico{
+	background-image: url(../img/service.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+	height: auto;
+	width: 30px;
+}
+
+.img-servico:hover{
+	cursor: pointer;
+}
+/*=================== IMAGEM DE FUNCO CONTATO =================== */
+.img-contato{
+	background-image: url(../img/contact.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: left top;
+	height: auto;
+}
+
+.img-contato:hover{
+	cursor: pointer;
+}
+/*=================== IMAGEM DE FUNDO DO VIDEO ===================*/
+.img-video{
+	background-image: url(../img/infinity.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+	border-radius: 5px;
+	width: auto;
+}
+
+/*=================== IMAGEM DE FUNDO DO CARD*/
+.img-card{
+	background-image: url(../img/1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+}
+
+/* IMAGEM DE FUNDO DO CARD 2 ===================*/
+.img-card-2{
+	background-image: url(../img/2.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+}
+
+/*IMAGEM RODAPE ===================*/
+.img-footer{
+	background-image: url(../img/portfolio.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+}
+
+.img-footer-servico{
+	background-image: url(../img/service.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+}
+
+.img-footer-portifolio{
+	background-image: url(../img/about.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: left top;
+}
+
+/*=================== QUEBRA DE LINHA ===================*/
+@media screen and (max-width:768px) {
+	.container1 {
+		flex-direction: column;
+	}
+
+	.left, .right {
+		width: 100%;
+	}
+	.left{
+		height: 40%;
+	}
+	.right{
+		height: 60%;
+	}
+	.left-2{
+		display: none;
+	}
+	.pad{
+		padding-right: 0px !important;
+		padding-left: 0px !important;
+	}.pos-icone, .pos-titulo{
+		font-size: 2rem !important;  
+	}.cor-icone{
+		font-size: 36px !important;
+	}.stiky-close{
+		left: 80% !important;
+	}.tam{
+
+	}
+}
+
+.tam{
+	height: auto;
+	width: 80%;
+}
+
+/* ================================== EFEITO DE ZOOM ==============================*/
+/*ZoomIn Hover Effect*/
+.hover-zoomin a {
+	/*display: block;*/
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+.hover-zoomin img {
+	width: 100%;
+	height: 100%;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.hover-zoomin:hover img {
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+}
+/* ================================== FINAL EFEITO DE ZOOM ==============================*/
+
+/* ====================================== CONFIGURAÇÃO DO ICONE ======================*/
+.pos-titulo{
+	position: absolute;
+    text-align: center;
+	color: white;
+	font-size: 3rem;
+	top: 60%;
+}
+
+.pos-icone{
+	position: absolute;
+	text-align: center;
+	color: white;
+	font-size: 4rem;
+	top: 30%;
+}
+/* ====================================== FINAL DA CONFIGURAÇÃO DO ICONE ======================*/
+
+/* ====================================== MARGEM DO BOTÃO FECHAR ======================*/
+.close{
+	margin: 10px;
+	color: white;
+	font-size: 30px;
+	z-index: 10;
+}
+.close:hover{
+	cursor: pointer;
+}
+/* ====================================== FINAL MARGEM DO BOTÃO ======================*/
+
+/* ====================================== ESPAÇAMENTO DA PAGINA PRINCIPAL /* ======================================*/
+.pad{
+	padding-left: 3rem;
+	padding-right: 3rem;
+}
+
+/*====================================== COR DO ICONE DO VIDEO ======================================*/
+.cor-icone{
+	color: #F33F3F;
+	font-size: 60px;
+}
+
+.cor-icone:hover{
+	color:  red;
+}
+/* ===================================== CONFIGURAÇÃO DO ICONE DE FECHAR ============================*/
+.icone-close{
+	position: fixed; 
+	left: 13%;
+	top: 15px;
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 28px;
+	transition: font-size 0.2s;
+	 -webkit-transition:  font-size 0.2s;
+}
+
+.icone-close:hover{
+	color: white;
+	font-size: 36px;
+	
+}
+/*CONFIURAÇÃO DO ICONE PARA FECHAR AS TELAS EM VIEW PEQUENA*/
+
+.stiky-close{
+	position: fixed; 
+	left: 90%;
+	top: 2%;
+	
+	border-radius:50%;
+	padding: 8px 16px;
+	z-index: 99;
+}
+
+.efeito-close{
+	color: white;
+	font-size: 20px;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.efeito-close:hover{
+	color: white;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* ===================================== ICONES DA TELA CONTATOS =====================================*/
+.icone-cor{
+	color: rgba(0, 0, 0, 0.3);
+}
+.icone-cor:hover{
+	color: rgba(0, 0, 0, 0.6);
+}
+
+/*CARD DA TELA SERVIÇOS*/
+.bg-gradient {
+background: #C9D6FF;
+background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF); 
+background: linear-gradient(to right, #E2E2E2, #C9D6FF);
+} 
+ul li {
+  margin-bottom:1.4rem;
+}
+.pricing-divider {
+border-radius: 20px;
+background: #C64545;
+padding: 1em 0 4em;
+position: relative;
+}
+.blue .pricing-divider{
+background: #2D5772; 
+}
+.green .pricing-divider {
+background: #1AA85C; 
+}
+.red b {
+  color:#C64545
+}
+.blue b {
+  color:#2D5772
+}
+.green b {
+  color:#1AA85C
+}
+.pricing-divider-img {
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	width: 100%;
+	height: 80px;
+}
+.deco-layer {
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+}
+.btn-custom  {
+  background:#C64545; color:#fff; border-radius:20px
+}
+
+.img-float {
+  width:50px; position:absolute;top:-3.5rem;right:1rem
+}
+
+.princing-item {
+  transition: all 150ms ease-out;
+}
+.princing-item:hover {
+  transform: scale(1.05);
+}
+.princing-item:hover .deco-layer--1 {
+  -webkit-transform: translate3d(15px, 0, 0);
+  transform: translate3d(15px, 0, 0);
+}
+.princing-item:hover .deco-layer--2 {
+  -webkit-transform: translate3d(-15px, 0, 0);
+  transform: translate3d(-15px, 0, 0);
+}
+
+/*galeria do portifolio*/
+.gallery-title
+{
+    font-size: 36px;
+    color: #42B32F;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+.gallery-title:after {
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    left: 46.5%;
+    height: 45px;
+    border-bottom: 1px solid #5e5e5e;
+}
+.filter-button
+{
+    font-size: 18px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    color: black;
+    margin-bottom: 30px;
+
+}
+.filter-button:hover
+{
+    font-size: 18px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    background-color: #007bff;
+
+}
+.btn-default:active .filter-button:active
+{
+    background-color: #007bff;
+    color: white;
+}
+
+.port-image
+{
+    width: 100%;
+}
+
+.gallery_product
+{
+    margin-bottom: 30px;
+}

@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, initial-scale = 1, shrink-to-fit=no">
+	<title>Portifolio 2</title>
+	<link rel="stylesheet"  href="css/stylo.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+	<link rel="stylesheet" href="VenoBox-master/venobox/venobox.css" type="text/css" media="screen" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+</head>
+
+<style type="text/css">
+
+
+
+</style>
+
+
+<body>
+	<!-- TELA DE APRESENTAÇÃO INICIAL -->
+	<div class="container1">
+		<div class="left" id="content2"><img src="img/logo.png" class="tam"></div>
+		<div class="right" id="content">
+			<!-- BOX SERVIÇOS -->
+			<div class="box hover-zoomin">
+				<a id="animate" class="box-1" onclick="$('#minhaDiv').fadeIn(1200)">
+					<img src="img/portfolio.jpg" class="box-1">
+					<i class="fas fa-handshake pos-icone"></i>
+					<h1 class="pos-titulo">Sobre nós</h1>	
+				</a>
+			</div>
+
+			<!-- BOX PORTIFOLIO -->
+			<div class="box hover-zoomin">
+				<a id="animateServico" class="box-1" onclick="$('#divservicos').fadeIn(1200)">
+					<img src="img/service.jpg" class="box-1">
+					<i class="fas fa-briefcase pos-icone"></i>
+					<h1 class="pos-titulo">Serviços</h1>	
+				</a>
+			</div>
+
+			<!-- BOX CONTATOS -->
+			<div class="box hover-zoomin">
+				<a id="animateContato" class="box-1" onclick="$('#divcontatos').fadeIn(1200)">
+					<img src="img/contact.jpg" class="box-1">
+					<i class="fas fa-phone pos-icone"></i>
+					<h1 class="pos-titulo">Contatos</h1>	
+				</a>
+			</div>
+
+			<!-- BOX SOBRE -->
+			<div class="box hover-zoomin">
+				<a id="animatePortifolio" class="box-1" onclick="$('#divportifolio').fadeIn(1200)">
+					<img src="img/about.jpg" class="box-1">
+					<i class="fas fa-star pos-icone"></i>
+					<h1 class="pos-titulo">Portifolio</h1>	
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- FINAL DA TELA DE APRESENTAÇÃO -->
+
+	<!-- TELA SOBRE NOS -->
+	<div class="container-fluid" id="minhaDiv" style="display: none;">
+		<div class="row">
+			<div class="col-2 d-none d-lg-block p-0">
+				<img src="img/portfolio.jpg" style="position:fixed; width: 16.65%; height: 100%;">
+				<a href="#" id="fechar" onclick="$('#minhaDiv').fadeOut(1000)"><i class="fas fa-times icone-close"></i></a>
+				<h1 class="text-white" style="position: fixed; left: 10%; top: 30%;writing-mode: vertical-lr;">SOBRE NÓS</h1>
+			</div>
+			<!-- ICONE PARA FECHAR TELA PEQUENAS -->
+			<div class="col-12 d-block d-lg-none ">
+				<a href="#" id="fecharClose" class="efeito-close stiky-close" onclick="$('#minhaDiv').fadeOut(1000)"><i class="fas fa-times"></i></a>
+			</div>
+
+			<div class="col-lg-10 col-md-12">
+				<div class="row">
+					<div class="col-12 my-5">
+						<h1 class="text-center display-5">Conheça Nossa <span class="text-success">Historia</span></h1>
+					</div>
+				</div>
+				<div class="row pad justify-content-center">
+					<div class="col-12 col-md-6 text-center">
+						<!-- ICONE DO VIDEO -->
+						<a class="venobox" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=p6-WUWmV-fg"><i class="fab fa-youtube cor-icone" style="position: absolute; text-align: center; top: 38%; left: 45%"></i></a>
+						<!-- IMAGEM DO VIDEO -->
+						<img src="img/infinity.jpg" class="rounded" style="height: 100%; width: 100%;">
+					</div>
+					<div class="col-12 col-md-6">
+						<h4 class=""><strong>TITULO</strong></h4>
+						<p class="text-muted">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+					</div>
+					<!-- </div> -->
+				</div>
+
+				<div class="row pad my-5">
+					<div class="col-12 col-md-4">
+						<div class="card border border-danger py-5 px-3 text-center my-4">
+							<img src="img/1.png" style="position: absolute; top: 0px; right: 0px; width: 30%;">
+							<img src="img/ideia.png" class="mx-auto" style="width: 70px;">
+							<!-- <i class="far fa-user text-center m-5	p-5 fa-3x rounded " style="background-color: red; color: white;"></i> -->
+							<p class="text-center mt-5"><strong>USUARIOS 1250</strong></p>
+						</div>
+					</div>
+					<div class="col-12 col-md-4">
+						<div class="card border border-danger py-5 px-3 text-center my-4">
+							<img src="img/1.png" style="position: absolute; top: 0px; right: 0px; width: 30%;">
+							<img src="img/ideia.png" class="mx-auto" style="width: 70px;">
+							<!-- <i class="far fa-user text-center m-5	p-5 fa-3x rounded " style="background-color: red; color: white;"></i> -->
+							<p class="text-center mt-5"><strong>USUARIOS 1250</strong></p>
+						</div>
+					</div>
+					<div class="col-12 col-md-4">
+						<div class="card border border-danger py-5 px-3 text-center my-4">
+							<img src="img/1.png" style="position: absolute; top: 0px; right: 0px; width: 30%;">
+							<img src="img/ideia.png" class="mx-auto" style="width: 70px;">
+							<!-- <i class="far fa-user text-center m-5	p-5 fa-3x rounded " style="background-color: red; color: white;"></i> -->
+							<p class="text-center mt-5"><strong>USUARIOS 1250</strong></p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 mb-5">
+						<h1 class="text-center display-5">Conheça Nosso <span class="text-success">Time</span></h1>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-10">
+						<div class="row">
+							<div class="col-6 col-md-3">
+								<div class="text-center">
+									<img src="img/usuario1.jpg" class="img-fluid rounded-circle" width="140px;">
+									<h5>Lorem ipsum</h5>	
+								</div>
+							</div>
+							<div class="col-6 col-md-3">
+								<div class="text-center">
+									<img src="img/usuario1.jpg" class="img-fluid rounded-circle" width="140px;">
+									<h5>Lorem ipsum</h5>	
+								</div>
+							</div>
+							<div class="col-6 col-md-3">
+								<div class="text-center">
+									<img src="img/usuario1.jpg" class="img-fluid rounded-circle" width="140px;">
+									<h5>Lorem ipsum</h5>	
+								</div>
+							</div>
+							<div class="col-6 col-md-3">
+								<div class="text-center">
+									<img src="img/usuario1.jpg" class="img-fluid rounded-circle" width="140px;">
+									<h5>Lorem ipsum</h5>	
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-10">
+						<div class="row">
+							<div class="col-6 col-md-3">
+								<div class="text-center">
+									<img src="img/usuario1.jpg" class="img-fluid rounded-circle" width="140px;">
+									<h5>Lorem ipsum</h5>	
+								</div>
+							</div>
+							<div class="col-6 col-md-3">
+								<div class="text-center">
+									<img src="img/usuario1.jpg" class="img-fluid rounded-circle" width="140px;">
+									<h5>Lorem ipsum</h5>	
+								</div>
+							</div>
+							<div class="col-6 col-md-3">
+								<div class="text-center">
+									<img src="img/usuario1.jpg" class="img-fluid rounded-circle" width="140px;">
+									<h5>Lorem ipsum</h5>	
+								</div>
+							</div>
+							<div class="col-6 col-md-3">
+								<div class="text-center">
+									<img src="img/usuario1.jpg" class="img-fluid rounded-circle" width="140px;">
+									<h5>Lorem ipsum</h5>	
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row my-5">
+					<div class="col-12">
+						<div class="text-center">
+							<h1 class="display-5">Lorem ipsum dolor sit</h1>
+							<p class="text-muted">Lorem ipsum dolor consectetuer adipiscing elit.</p>
+							<button class="btn btn-success">Conheça mais</button>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 img-footer text-center py-2"><br>
+						<p class="text-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- FINAL DA TELA SOBRE NOS -->
+
+	<!-- TELA DE SERVIÇOS -->
+	<div class="container-fluid" id="divservicos" style="display: none;">
+		<div class="row">
+			<div class="col-2 d-none d-lg-block p-0">
+				<img src="img/service.jpg" style="position:fixed; width: 16.65%; height: 100%;">
+				<a href="#" id="fecharservico" onclick="$('#divservicos').fadeOut(1000)"><i class="fas fa-times icone-close"></i></a>
+				<h1 class="text-white" style="position: fixed; left: 10%; top: 30%;writing-mode: vertical-lr;">SERVIÇOS</h1>
+			</div>
+
+			<!-- ICONE PARA FECHAR TELA PEQUENAS -->
+			<div class="col-12 d-block d-sm-none">
+				<a href="#" id="fecharservicoClose" class="efeito-close stiky-close" onclick="$('#divservicos').fadeOut(1000)"><i class="fas fa-times"></i></a>
+			</div>
+
+			<div class="col-lg-10 col-md-12">
+				<div class="row">
+					<div class="col-12 my-5">
+						<h1 class="text-center display-4">Conheça Nossos <span class="text-danger">Serviços</span></h1>
+					</div>
+				</div>
+				<div class="row pad my-5">
+					<div class="col-12 col-md-4 my-4">
+						<img src="img/servico-1.svg">
+						<h1>TITULO</h1>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+					</div>
+					<div class="col-12 col-md-4 my-4">
+						<img src="img/servico-1.svg">
+						<h1>TITULO</h1>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+					</div>
+					<div class="col-12 col-md-4 my-4">
+						<img src="img/servico-1.svg">
+						<h1>TITULO</h1>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+					</div>	
+				</div>
+
+				<div class="row pad my-5">
+					<div class="col-12">
+						<h1 class="text-center display-4">ESCOLHA SEU <span class="text-danger">PLANO</span></h1>
+						<h5 class="text-muted text-center text-uppercase">desfrute de tudo que podemos oferecer</h5>
+					</div>
+				</div>
+
+					<!-- <div class="row justify-content-center">
+						<div class="col-10">
+							<div class="row">
+								<div class="col-12 col-md-4">
+									<div class="card">
+										<div class="card-body">
+											<div class="text-center mb-5">
+												<h2 class="card-title mt-5"><strong>Título do card</strong></h2>
+												<h2 class="card-title mb-5"><strong>$0/ mensal</strong></h2>
+												<h6 class="card-text">15 Projetos</h6>
+												<h6 class="card-text">30 GB Storage</h6>
+												<h6 class="card-subtitle text-muted mb-5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h6>
+												<a href="#" class="card-link">Link do card</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-md-4">
+									<div class="card">
+										<div class="card-body">
+											<div class="text-center mb-5">
+												<h2 class="card-title mt-5"><strong>Título do card</strong></h2>
+												<h2 class="card-title mb-5 text-primary"><strong>$0/ mensal</strong></h2>
+												<h6 class="card-text">15 Projetos</h6>
+												<h6 class="card-text">30 GB Storage</h6>
+												<h6 class="card-subtitle text-muted"  style="margin-bottom: 2.2rem;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h6>
+												<a href="#" class="btn btn-primary">Link do card</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-md-4">
+									<div class="card">
+										<div class="card-body">
+											<div class="text-center mb-5">
+												<h2 class="card-title mt-5"><strong>Título do card</strong></h2>
+												<h2 class="card-title mb-5"><strong>$0/ mensal</strong></h2>
+												<h6 class="card-text">15 Projetos</h6>
+												<h6 class="card-text">30 GB Storage</h6>
+												<h6 class="card-subtitle text-muted mb-5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h6>
+												<a href="#" class="card-link">Link do card</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> -->
+
+				<div class="row m-auto text-center w-75">
+						<div class="col-12 col-md-4 my-4 princing-item red">
+							<div class="pricing-divider ">
+								<h3 class="text-light">START-UP</h3>
+								<h4 class="my-0 display-2 text-light font-weight-normal mb-3"><span class="h3">$</span> 120 <span class="h5">/mo</span></h4>
+								<svg class='pricing-divider-img' enable-background='new 0 0 300 100' height='100px' id='Layer_1' preserveAspectRatio='none' version='1.1' viewBox='0 0 300 100' width='300px' x='0px' xml:space='preserve' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg' y='0px'>
+									<path class='deco-layer deco-layer--1' d='M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729
+									c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z' fill='#FFFFFF' opacity='0.6'></path>
+									<path class='deco-layer deco-layer--2' d='M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729
+									c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z' fill='#FFFFFF' opacity='0.6'></path>
+									<path class='deco-layer deco-layer--3' d='M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716
+									H42.401L43.415,98.342z' fill='#FFFFFF' opacity='0.7'></path>
+									<path class='deco-layer deco-layer--4' d='M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428
+									c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z' fill='#FFFFFF'></path>
+								</svg>
+							</div>
+							<div class="card-body bg-white mt-0 shadow">
+								<ul class="list-unstyled mb-5 position-relative">
+									<li><b>10</b> users included</li>
+									<li><b>2 GB</b> of storage</li>
+									<li><b>Free </b>Email support</li>
+									<li><b>Help center access</b></li>
+								</ul>
+								<button type="button" class="btn btn-lg btn-block  btn-custom ">Sign up for free</button>
+							</div>
+						</div>
+
+						<div class="col-12 col-md-4 my-4 princing-item blue">
+							<div class="pricing-divider ">
+								<h3 class="text-light">BUSINESS</h3>
+								<h4 class="my-0 display-2 text-light font-weight-normal mb-3"><span class="h3">$</span> 250 <span class="h5">/mo</span></h4>
+								<svg class='pricing-divider-img' enable-background='new 0 0 300 100' height='100px' id='Layer_1' preserveAspectRatio='none' version='1.1' viewBox='0 0 300 100' width='300px' x='0px' xml:space='preserve' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg' y='0px'>
+									<path class='deco-layer deco-layer--1' d='M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729
+									c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z' fill='#FFFFFF' opacity='0.6'></path>
+									<path class='deco-layer deco-layer--2' d='M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729
+									c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z' fill='#FFFFFF' opacity='0.6'></path>
+									<path class='deco-layer deco-layer--3' d='M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716
+									H42.401L43.415,98.342z' fill='#FFFFFF' opacity='0.7'></path>
+									<path class='deco-layer deco-layer--4' d='M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428
+									c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z' fill='#FFFFFF'></path>
+								</svg>
+							</div>
+
+							<div class="card-body bg-white mt-0 shadow">
+								<ul class="list-unstyled mb-5 position-relative">
+									<li><b>100 </b>users included</li>
+									<li><b>10 GB</b> of storage</li>
+									<li><b>Free</b>Email support</li>
+									<li><b>Help center access</b></li>
+								</ul>
+								<button type="button" class="btn btn-lg btn-block  btn-custom ">Sign up for free</button>
+							</div>
+						</div>
+
+						<div class="col-12 col-md-4 my-4 princing-item green">
+							<div class="pricing-divider ">
+								<h3 class="text-light">PRO</h3>
+								<h4 class="my-0 display-2 text-light font-weight-normal mb-3"><span class="h3">$</span> 450 <span class="h5">/mo</span></h4>
+								<svg class='pricing-divider-img' enable-background='new 0 0 300 100' height='100px' id='Layer_1' preserveAspectRatio='none' version='1.1' viewBox='0 0 300 100' width='300px' x='0px' xml:space='preserve' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg' y='0px'>
+									<path class='deco-layer deco-layer--1' d='M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729
+									c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z' fill='#FFFFFF' opacity='0.6'></path>
+									<path class='deco-layer deco-layer--2' d='M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729
+									c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z' fill='#FFFFFF' opacity='0.6'></path>
+									<path class='deco-layer deco-layer--3' d='M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716
+									H42.401L43.415,98.342z' fill='#FFFFFF' opacity='0.7'></path>
+									<path class='deco-layer deco-layer--4' d='M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428
+									c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z' fill='#FFFFFF'></path>
+								</svg>
+							</div>
+
+							<div class="card-body bg-white mt-0 shadow">
+								<ul class="list-unstyled mb-5 position-relative">
+									<li><b>300</b> users included</li>
+									<li><b>20 GB</b> of storage</li>
+									<li><b>Free</b> Email support</li>
+									<li><b>Help center access</b></li>
+								</ul>
+								<button type="button" class="btn btn-lg btn-block  btn-custom ">Sign up for free</button>
+							</div>
+						</div>
+				</div>
+
+				<div class="row  my-5">
+						<div class="col-12">
+							<div class="text-center">
+								<h1 class="display-4">Lorem ipsum dolor sit</h1>
+								<p class="text-muted">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+								<button class="btn btn-danger p-3">Conheça mais</button>
+							</div>
+						</div>
+				</div>
+				<div class="row">
+						<div class="col-12 img-footer-servico text-center py-2"><br>
+							<p class="text-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- FINAL DA TELA DE SERVIÇOS -->
+
+	<!-- TELA DE CONTATOS -->
+	<div class="container-fluid" id="divcontatos" style="display: none;">
+		<div class="row">
+				<div class="col-2 d-none d-lg-block p-0">
+					<img src="img/contact.jpg" style="position:fixed; width: 16.65%; height: 100%;">
+					<a href="#" id="fecharservico" onclick="$('#divcontatos').fadeOut(1000)"><i class="fas fa-times icone-close"></i></a>
+					<h1 class="text-white" style="position: fixed; left: 10%; top: 30%;writing-mode: vertical-lr;">CONTATOS</h1>
+				</div>
+
+				<!-- ICONE PARA FECHAR TELA PEQUENAS -->
+				<div class="col-12 d-block d-sm-none ">
+					<a href="#" id="fecharservicoClose" class="efeito-close stiky-close" onclick="$('#divcontatos').fadeOut(1000)"><i class="fas fa-times"></i></a>
+				</div>
+
+				<div class="col-lg-10 col-md-12">
+					<div class="row">
+						<div class="col-12 my-4">
+							<h1 class="text-center display-4">ENTRAR EM<span style="color: #A85E2E"> CONTATO</span></h1>
+						</div>
+					</div>
+					<div class="row pad my-5">
+						<div class="col-12 col-md-6 mb-4">
+							<!-- TITULO DO ENDEREÇO -->
+							<h1>Lorem ipsum dolor</h1>
+							<!-- SUBTITULO DO ENDEREÇO -->
+							<p class="text-muted">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+							<hr>
+							<div class="row">
+								<!-- ICONE DO MAPA -->
+								<div class="col-1">
+									<i class="fas fa-map-marker-alt mt-1"></i>		
+								</div>
+								<!-- ENDEREÇO -->
+								<div class="col-5">
+									<h5><strong>Endereço</strong></h5>
+									<p class="text-muted">Rua:Lorem ipsum <br>
+									Lorem ipsum dolor sit amet</p>
+								</div>
+								<!-- ICONES TELEFONE/EMAIL -->
+								<div class="col-1">
+									<i class="fas fa-phone"></i>
+									<i class="fab fa-telegram-plane mt-4"></i>		
+								</div>
+								<!-- TELEFONE E EMAIL -->
+								<div class="col-5">
+									<a href="">(11) 1111 - 1111</a>
+									<div class="mb-3"></div>
+									<a href="">info@informacao.com</a>
+								</div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="col-12">
+									<a href=""><i class="fab fa-facebook fa-2x mx-2 icone-cor"></i></a>
+									<a href=""><i class="fab fa-instagram fa-2x mx-2 icone-cor"></i></a>
+									<a href=""><i class="fas fa-envelope fa-2x mx-2 icone-cor"></i></a>
+									<a href=""><i class="fab fa-linkedin fa-2x mx-2 icone-cor"></i></a>
+									<a href=""><i class="fab fa-youtube fa-2x mx-2 icone-cor"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-6">
+							<h1>Lorem ipsum dolor</h1>
+							<p class="text-muted">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+							<hr>
+							<!-- FORMULARIO PARA MENSAGEM -->
+							<form>
+								<div class="form-group">
+									<label for="exampleInputEmail1">Nome</label>
+									<input type="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu nome">
+								</div>
+								<div class="form-group">
+									<label for="exampleInputPassword1">E-mail</label>
+									<input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Seu e-mail">
+								</div>
+								<div class="form-group">
+									<label for="exampleInputPassword1">Mensagem</label>
+									<textarea class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Digite seu texto"></textarea>
+								</div>
+								<button type="submit" class="btn btn-primary btn-block" style="background-color: #A85E2E; border-color: white">Enviar</button>
+							</form>
+						</div>
+					</div>
+
+					<!-- MAPA DO LOCAL -->
+					<div class="row justify-content-center mb-5">
+						<div class="col-10">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.142590595111!2d-46.844899885619654!3d-23.563321784681897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf00157159281f%3A0x5277a394647dc4e0!2sR.+Paragua%C3%A7%C3%BA+Paulista%2C+Carapicu%C3%ADba+-+SP%2C+06364-550!5e0!3m2!1spt-BR!2sbr!4v1539694817740" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-12 img-contato text-center py-2"><br>
+							<p class="text-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
+	<!-- FINAL DA TELA DE CONTATOS -->
+
+	<!-- TELA DE PORTIFOLIO -->
+	<div class="container-fluid" id="divportifolio" style="display: none;">
+		<div class="row">
+			<div class="col-2 d-none d-lg-block p-0">
+				<img src="img/about.jpg" style="position:fixed; width: 16.65%; height: 100%;">
+				<a href="#" id="fecharportifolio" onclick="$('#divportifolio').fadeOut(1000)"><i class="fas fa-times icone-close"></i></a>
+				<h1 class="text-white" style="position: fixed; left: 10%; top: 30%;writing-mode: vertical-lr;">PORTIFOLIO</h1>
+			</div>
+
+			<!-- ICONE PARA FECHAR TELA PEQUENAS -->
+			<div class="col-12 d-block d-sm-none ">
+				<a href="#" id="fecharportifolioClose" class="efeito-close stiky-close" onclick="$('#divportifolio').fadeOut(1000)"><i class="fas fa-times"></i></a>
+			</div>
+
+			<div class="col-lg-10 col-md-12">
+				<div class="row">
+					<div class="col-12 my-4">
+						<h1 class="text-center display-4">NOSSOS<span class="text-primary"> TRABALHOS</span></h1>
+					</div>
+				</div>
+				<div class="row pad my-5">
+					<div class="col-12">
+						<div align="center">
+							<button class="btn btn-default filter-button" data-filter="all">All</button>
+							<button class="btn btn-default filter-button" data-filter="hdpe">HDPE Pipes</button>
+							<button class="btn btn-default filter-button" data-filter="sprinkle">Sprinkle Pipes</button>
+							<button class="btn btn-default filter-button" data-filter="spray">Spray Nozzle</button>
+							<button class="btn btn-default filter-button" data-filter="irrigation">Irrigation Pipes</button>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+
+					<div class="gallery_product col-6 col-md-4 filter hdpe text-center">
+						<img src="http://fakeimg.pl/200x200/" class="img-responsive">
+					</div>
+
+					<div class="gallery_product col-6 col-md-4 filter sprinkle text-center">
+						<img src="http://fakeimg.pl/200x200/" class="img-responsive">
+					</div>
+
+					<div class="gallery_product col-6 col-md-4 filter hdpe text-center">
+						<img src="http://fakeimg.pl/200x200/" class="img-responsive">
+					</div>
+
+					<div class="gallery_product col-6 col-md-4 filter irrigation text-center">
+						<img src="http://fakeimg.pl/200x200/" class="img-responsive">
+					</div>
+
+					<div class="gallery_product col-6 col-md-4 filter spray text-center">
+						<img src="http://fakeimg.pl/200x200/" class="img-responsive">
+					</div>
+
+					<div class="gallery_product col-6 col-md-4 filter irrigation text-center">
+						<img src="http://fakeimg.pl/200x200/" class="img-responsive">
+					</div>
+
+					<div class="gallery_product col-6 col-md-4 filter spray text-center">
+						<img src="http://fakeimg.pl/200x200/" class="img-responsive">
+					</div>
+
+					<div class="gallery_product col-6 col-md-4 filter irrigation text-center">
+						<img src="http://fakeimg.pl/200x200/" class="img-responsive">
+					</div>
+
+					<div class="gallery_product col-6 col-md-4 filter irrigation text-center">
+						<img src="http://fakeimg.pl/200x200/" class="img-responsive">
+					</div>
+
+					<div class="gallery_product col-6 col-md-4 filter hdpe text-center">
+						<img src="http://fakeimg.pl/200x200/" class="img-responsive">
+					</div>
+
+					<div class="gallery_product col-6 col-md-4 filter spray text-center">
+						<img src="http://fakeimg.pl/200x200/" class="img-responsive">
+					</div>
+
+					<div class="gallery_product col-6 col-md-4 filter sprinkle text-center">
+						<img src="http://fakeimg.pl/200x200/" class="img-responsive">
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<!-- FINAL DA TELA DE CONTATOS -->
+
+			<!-- <script src="http://code.jquery.com/jquery-latest.js"></script> -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+			<script src="js/jquery-3.2.1.min.js"></script>
+			<script src="js/bootstrap.min.js"></script>
+			<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+			<script type="text/javascript" src="VenoBox-master/venobox/venobox.min.js"></script>
+
+
+			<!-- ======================== ABRE TODAS AS TELAS ===================================== -->
+			<script>
+				$(document).ready(function() {
+					$("#animate, #animateServico, #animateContato, #animatePortifolio").click(function() {
+						$('#content').animate({"left": "100%"}, 1000);
+						$('#content2').animate({"right": "100%"},1000);
+					});
+				});
+			</script>
+
+
+			<!-- ======================== FECHA TODAS AS TELAS ======================== -->
+			<script>
+				$(document).ready(function() {
+					$("#fechar, #fecharClose, #fecharservico, #fecharservicoClose, #fecharcontato,#fecharservicoClose, #fecharportifolio, #fecharportifolioClose").click(function() {
+						$('#content').animate({"left": "0%"}, 1000);
+						$('#content2').animate({"right": "0%"},1000);
+					});
+				});
+			</script>
+
+			<!-- galeria portifolio -->
+			<script type="text/javascript">
+				$(document).ready(function(){
+
+					$(".filter-button").click(function(){
+						var value = $(this).attr('data-filter');
+
+						if(value == "all")
+						{
+            //$('.filter').removeClass('hidden');
+            $('.filter').show('1000');
+        }
+        else
+        {
+//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+$(".filter").not('.'+value).hide('3000');
+$('.filter').filter('.'+value).show('3000');
+
+}
+});
+
+					if ($(".filter-button").removeClass("active")) {
+						$(this).removeClass("active");
+					}
+					$(this).addClass("active");
+
+				});
+			</script>
+
+			<!-- INICIALIZAÇÃO DO PLUGIN - MODAL VIDEO(VENOBOX) -->
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$('.venobox').venobox(); 
+				});
+
+				$("#firstlink").venobox().trigger('click');
+			</script>
+
+
+		</body>
+		</html
+
+
+

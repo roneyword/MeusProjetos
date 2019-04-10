@@ -1,0 +1,539 @@
+.box {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .box .conteudo {
+    position: relative;
+    height: 520px;
+    width: 100%;
+    text-align: center; }
+    .box .conteudo .ponto {
+      position: absolute;
+      top: 55%;
+      left: 56%;
+      height: 20px;
+      width: 20px;
+      background-color: transparent;
+      border: 2px solid red;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      animation: pulse 0.3s infinite linear;
+      -webkit-animation: pulse 0.6s infinite alternate; }
+    .box .conteudo .linha1 {
+      position: absolute;
+      top: 56%;
+      left: 57%;
+      height: 2px;
+      width: 100px;
+      background-color: gray;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+      border-radius: 50px;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      -ms-border-radius: 50px;
+      -o-border-radius: 50px;
+      transform: rotateZ(320deg);
+      -webkit-transform: rotateZ(320deg);
+      -moz-transform: rotateZ(320deg);
+      -ms-transform: rotateZ(320deg);
+      -o-transform: rotateZ(320deg);
+      animation: piscalinhatela2 1s linear both;
+      -webkit-animation: piscalinhatela2 1s linear both;
+      transform-origin: 0% 0%;
+      opacity: 0; }
+    .box .conteudo .linha1-efect {
+      animation: piscalinhatela1 1s linear both;
+      -webkit-animation: piscalinhatela1 1s linear both; }
+    .box .conteudo .linha2 {
+      position: absolute;
+      top: 43.8%;
+      left: calc(62.55555% + 1px);
+      height: 2px;
+      width: 100px;
+      background-color: gray;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+      border-radius: 50px;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      -ms-border-radius: 50px;
+      -o-border-radius: 50px;
+      animation: piscalinhatela2 1s linear both;
+      -webkit-animation: piscalinhatela2 1s linear both;
+      animation-delay: 0.29s;
+      opacity: 0; }
+    .box .conteudo .linha2-efect {
+      animation: piscalinhatela1 1s linear 0.60s both;
+      -webkit-animation: piscalinhatela1 1s linear 0.60s both; }
+    .box .conteudo .linha3 {
+      position: absolute;
+      top: 32%;
+      left: 70%;
+      height: 130px;
+      width: 130px;
+      border: 2px solid grey;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      transition: all 0.30s linear;
+      -webkit-transition: all 0.30s linear;
+      -moz-transition: all 0.30s linear;
+      -ms-transition: all 0.30s linear;
+      -o-transition: all 0.30s linear;
+      transition-delay: 0.58s;
+      visibility: hidden; }
+    .box .conteudo .linha3-efect {
+      visibility: visible; }
+    .box .conteudo .titulo {
+      position: absolute;
+      top: 34%;
+      left: 72.2%;
+      color: grey;
+      text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+      visibility: hidden;
+      transition: all 0.30s linear;
+      -webkit-transition: all 0.30s linear;
+      -moz-transition: all 0.30s linear;
+      -ms-transition: all 0.30s linear;
+      -o-transition: all 0.30s linear;
+      transition-delay: 0.58s; }
+    .box .conteudo .titulo-visible {
+      visibility: visible;
+      animation: piscalinhatela1 1s linear both;
+      -webkit-animation: piscalinhatela1 1s linear both;
+      animation-delay: 0.58s; }
+    .box .conteudo .ponto2 {
+      position: absolute;
+      top: 65%;
+      left: 35%;
+      height: 20px;
+      width: 20px;
+      background-color: transparent;
+      border: 2px solid red;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      animation: pulse 0.3s infinite linear;
+      -webkit-animation: pulse 0.6s infinite alternate; }
+    .box .conteudo .linhatela1 {
+      position: absolute;
+      top: 54%;
+      left: 30%;
+      height: 2px;
+      width: 100px;
+      background-color: gray;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+      border-radius: 50px;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      -ms-border-radius: 50px;
+      -o-border-radius: 50px;
+      transform: rotateZ(-320deg);
+      -webkit-transform: rotateZ(-320deg);
+      -moz-transform: rotateZ(-320deg);
+      -ms-transform: rotateZ(-320deg);
+      -o-transform: rotateZ(-320deg);
+      animation: piscalinhatela2 1s linear both;
+      -webkit-animation: piscalinhatela2 1s linear both;
+      transform-origin: 0% 0%;
+      opacity: 0; }
+    .box .conteudo .linha1-efect-tela {
+      animation: piscalinhatela1 1s linear both;
+      -webkit-animation: piscalinhatela1 1s linear both; }
+    .box .conteudo .linhatela2 {
+      position: absolute;
+      top: 54%;
+      left: 22.5%;
+      height: 2px;
+      width: 100px;
+      background-color: gray;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+      border-radius: 50px;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      -ms-border-radius: 50px;
+      -o-border-radius: 50px;
+      animation: piscalinhatela2 1s linear both;
+      -webkit-animation: piscalinhatela2 1s linear both;
+      animation-delay: 0.29s;
+      opacity: 0; }
+    .box .conteudo .linha2-efect-tela {
+      animation: piscalinhatela1 1s linear both;
+      -webkit-animation: piscalinhatela1 1s linear both;
+      animation-delay: 0.60s; }
+    .box .conteudo .linhatela3 {
+      position: absolute;
+      top: 42%;
+      left: 12.88888%;
+      height: 130px;
+      width: 130px;
+      border: 2px solid grey;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      transition: all 0.30s linear;
+      -webkit-transition: all 0.30s linear;
+      -moz-transition: all 0.30s linear;
+      -ms-transition: all 0.30s linear;
+      -o-transition: all 0.30s linear;
+      transition-delay: 1s;
+      visibility: hidden; }
+    .box .conteudo .linha3-efect-tela {
+      visibility: visible; }
+    .box .conteudo .titulotela {
+      position: absolute;
+      top: 44%;
+      left: 15%;
+      color: grey;
+      text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+      visibility: hidden;
+      transition: all 0.30s linear;
+      -webkit-transition: all 0.30s linear;
+      -moz-transition: all 0.30s linear;
+      -ms-transition: all 0.30s linear;
+      -o-transition: all 0.30s linear;
+      transition-delay: 0.58s; }
+    .box .conteudo .titulo-visible-tela {
+      visibility: visible;
+      animation: pisca 1s linear both;
+      -webkit-animation: pisca 1s linear both;
+      animation-delay: 0.58s; }
+    .box .conteudo .ponto3 {
+      position: absolute;
+      top: 37%;
+      left: 47.6%;
+      height: 20px;
+      width: 20px;
+      background-color: transparent;
+      border: 2px solid red;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      animation: pulse 0.3s infinite linear;
+      -webkit-animation: pulse 0.6s infinite alternate; }
+    .box .conteudo .linhabotao1 {
+      position: absolute;
+      top: 15.5%;
+      left: 37.5%;
+      height: 2px;
+      width: 186px;
+      background-color: gray;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+      border-radius: 50px;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      -ms-border-radius: 50px;
+      -o-border-radius: 50px;
+      transform: rotateZ(-320deg);
+      -webkit-transform: rotateZ(-320deg);
+      -moz-transform: rotateZ(-320deg);
+      -ms-transform: rotateZ(-320deg);
+      -o-transform: rotateZ(-320deg);
+      animation: piscalinhatela2 1s linear both;
+      -webkit-animation: piscalinhatela2 1s linear both;
+      transform-origin: 0% 0%;
+      opacity: 0; }
+    .box .conteudo .linha1-efect-botao {
+      animation: piscabotao 1s linear both;
+      -webkit-animation: piscabotao 1s linear both; }
+    .box .conteudo .linhabotao2 {
+      position: absolute;
+      top: 15.22222%;
+      left: 30.11111%;
+      height: 2px;
+      width: 0px;
+      background-color: gray;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+      border-radius: 50px;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      -ms-border-radius: 50px;
+      -o-border-radius: 50px;
+      animation: piscalinhatela2 1s linear both;
+      -webkit-animation: piscalinhatela2 1s linear both;
+      transition-delay: 0.29s; }
+    .box .conteudo .linha2-efect-botao {
+      width: 100px;
+      animation: piscabotao 1s linear both;
+      -webkit-animation: piscabotao 1s linear both;
+      animation-delay: 0.29s; }
+    .box .conteudo .linhabotao3 {
+      position: absolute;
+      top: 3%;
+      left: 20.55555%;
+      height: 130px;
+      width: 130px;
+      border: 2px solid grey;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      transition: all 0.30s linear;
+      -webkit-transition: all 0.30s linear;
+      -moz-transition: all 0.30s linear;
+      -ms-transition: all 0.30s linear;
+      -o-transition: all 0.30s linear;
+      transition-delay: 1s;
+      visibility: hidden; }
+    .box .conteudo .linha3-efect-botao {
+      visibility: visible; }
+    .box .conteudo .titulobotao {
+      position: absolute;
+      top: 5%;
+      left: 22.77777%;
+      color: grey;
+      text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+      visibility: hidden;
+      transition: all 0.30s linear;
+      -webkit-transition: all 0.30s linear;
+      -moz-transition: all 0.30s linear;
+      -ms-transition: all 0.30s linear;
+      -o-transition: all 0.30s linear;
+      transition-delay: 0.58s; }
+    .box .conteudo .titulo-visible-botao {
+      visibility: visible;
+      animation: pisca 1s linear both;
+      -webkit-animation: pisca 1s linear both;
+      animation-delay: 0.58s; }
+    .box .conteudo .ponto4 {
+      position: absolute;
+      top: 56%;
+      left: 47.4%;
+      height: 20px;
+      width: 20px;
+      background-color: transparent;
+      border: 2px solid red;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      animation: pulse 0.3s infinite linear;
+      -webkit-animation: pulse 0.6s infinite alternate; }
+    .box .conteudo .linhapower1 {
+      position: absolute;
+      top: 58%;
+      left: 48.2%;
+      height: 2px;
+      width: 186px;
+      background-color: gray;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+      border-radius: 50px;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      -ms-border-radius: 50px;
+      -o-border-radius: 50px;
+      transform: rotateZ(-320deg);
+      -webkit-transform: rotateZ(-320deg);
+      -moz-transform: rotateZ(-320deg);
+      -ms-transform: rotateZ(-320deg);
+      -o-transform: rotateZ(-320deg);
+      transform-origin: 0% 0%;
+      animation: piscalinhatela2 1s linear both;
+      -webkit-animation: piscalinhatela2 1s linear both;
+      opacity: 0; }
+    .box .conteudo .linha1-efect-power {
+      animation: piscabotao 1s linear both;
+      -webkit-animation: piscabotao 1s linear both; }
+    .box .conteudo .linhapower2 {
+      position: absolute;
+      top: 81%;
+      left: 58.9%;
+      height: 2px;
+      width: 0px;
+      background-color: gray;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+      border-radius: 50px;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      -ms-border-radius: 50px;
+      -o-border-radius: 50px;
+      animation: piscalinhatela2 1s linear both;
+      -webkit-animation: piscalinhatela2 1s linear both;
+      transition-delay: 0.29s; }
+    .box .conteudo .linha2-efect-power {
+      width: 100px;
+      animation: piscabotao 1s linear both;
+      -webkit-animation: piscabotao 1s linear both;
+      animation-delay: 0.29s; }
+    .box .conteudo .linhapower3 {
+      position: absolute;
+      top: 69%;
+      left: 66.22222%;
+      height: 130px;
+      width: 130px;
+      border: 2px solid grey;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      transition: all 0.30s linear;
+      -webkit-transition: all 0.30s linear;
+      -moz-transition: all 0.30s linear;
+      -ms-transition: all 0.30s linear;
+      -o-transition: all 0.30s linear;
+      transition-delay: 1s;
+      visibility: hidden; }
+    .box .conteudo .linha3-efect-power {
+      visibility: visible; }
+    .box .conteudo .titulopower {
+      position: absolute;
+      top: 71%;
+      left: 68.5%;
+      color: grey;
+      text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+      visibility: hidden;
+      transition: all 0.30s linear;
+      -webkit-transition: all 0.30s linear;
+      -moz-transition: all 0.30s linear;
+      -ms-transition: all 0.30s linear;
+      -o-transition: all 0.30s linear;
+      transition-delay: 0.58s; }
+    .box .conteudo .titulo-visible-power {
+      visibility: visible;
+      animation: pisca 1s linear both;
+      -webkit-animation: pisca 1s linear both;
+      animation-delay: 0.58s; }
+
+@keyframes pulse {
+  from {
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5); }
+  to {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1); } }
+@keyframes piscalinhatela1 {
+  0% {
+    opacity: 1; }
+  1% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  55% {
+    opacity: 1; }
+  70% {
+    opacity: 0; }
+  75% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+@keyframes piscalinhatela2 {
+  0% {
+    opacity: 0; }
+  1% {
+    opacity: 1; }
+  50% {
+    opacity: 1; }
+  55% {
+    opacity: 0; }
+  70% {
+    opacity: 1; }
+  75% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+@keyframes piscabotao {
+  0% {
+    opacity: 1; }
+  1% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  55% {
+    opacity: 1; }
+  70% {
+    opacity: 0; }
+  75% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+.box-1 {
+  position: relative;
+  width: 100%;
+  height: 500px; }
+  .box-1 ul {
+    position: absolute;
+    display: flex;
+    height: 500px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px; }
+    .box-1 ul li {
+      position: relative;
+      height: 100%;
+      width: 20%;
+      list-style: none;
+      box-sizing: border-box;
+      transition: width 0.5s linear;
+      -webkit-transition: width 0.5s linear;
+      -moz-transition: width 0.5s linear;
+      -ms-transition: width 0.5s linear;
+      -o-transition: width 0.5s linear;
+      overflow: hidden; }
+      .box-1 ul li:hover .conteudo {
+        bottom: 0px;
+        transition-delay: 0.5s; }
+    .box-1 ul li:nth-child(1) {
+      background: url("../img/natureza.jpg");
+      background-size: cover;
+      background-position: left; }
+    .box-1 ul li:nth-child(2) {
+      background: url("../img/natureza2.jpg");
+      background-size: cover;
+      background-position: left; }
+    .box-1 ul li:nth-child(3) {
+      background: url("../img/natureza3.jpg");
+      background-size: cover;
+      background-position: left; }
+    .box-1 ul li:nth-child(4) {
+      background: url("../img/natureza4.jpg");
+      background-size: cover;
+      background-position: left; }
+    .box-1 ul li:nth-child(5) {
+      background: url("../img/natureza5.jpg");
+      background-size: cover;
+      background-position: left; }
+    .box-1 ul:hover li {
+      width: 10%; }
+      .box-1 ul:hover li:hover {
+        width: 60%; }
+    .box-1 ul .conteudo {
+      position: absolute;
+      bottom: -100%;
+      height: auto;
+      width: 100%;
+      background-color: black;
+      color: white;
+      transition: all .25s linear;
+      -webkit-transition: all .25s linear;
+      -moz-transition: all .25s linear;
+      -ms-transition: all .25s linear;
+      -o-transition: all .25s linear; }
+
+/*# sourceMappingURL=estilo.css.map */

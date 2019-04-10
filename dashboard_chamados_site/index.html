@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, initial-scale = 1, shrink-to-fit=no">
+	<title>Dashboard</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+
+<style type="text/css">
+
+/* TIRA OS ATRIBUTOS DA TAG <a>*/
+.link-decoracao {
+	text-decoration: none !important;
+}
+/*COR DE FUNDO DO NAVBAR*/
+.bg-nav{
+	background-color: #574B90;
+}
+/*COR DO TEXTO DO MENU*/
+.texto-preto:hover{
+	color: black !important;
+}
+/*MARGEM DO TEXTO DO MENU*/
+.ml-esq{
+	margin-left: 63px !important;
+}
+.mr-dir{
+	margin-right: 30px !important;
+}
+
+/*COR DE FUNDO DA TELA TODA*/
+body{
+	background-color: #E3E3E3;
+}
+
+/*CUSTOMIZAÇÃO DO SCROLL*/
+::-webkit-scrollbar {
+	width: 05px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	/*background: red; */
+	/*display: none;*/
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #EFF0F3;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #9698A5;
+}
+
+.bg-menu {
+    background: #fcbf0a; /* Old browsers */
+    background: -moz-linear-gradient(left, #fcbf0a 0%, #ff9c00 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #fcbf0a 0%,#ff9c00 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #fcbf0a 0%,#ff9c00 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcbf0a', endColorstr='#ff9c00',GradientType=1 ); /* IE6-9 */
+}
+
+/*FINAL DO SCROLL*/
+
+/*MARGIN PARA O ICONE DE PROCURA, QUANTO A TELA ESTIVER SMALL*/
+@media screen and (max-width:1024px) {
+	.mdl-textfield{
+		margin-left: 50px !important;
+	}	
+}
+
+</style>
+
+<body>
+	<!-- BARRA NAVBAR DO TOPO -->
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+		<header class="mdl-layout__header bg-menu">
+			<div class="mdl-layout__header-row pl-4">
+				<!-- BOTAO DO MENU -->
+				<!-- <button class="mr-dir mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mr-3">
+					<i class="fas fa-bars"></i>
+				</button> -->
+				<!-- ICONE DO PROCURA -->
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">
+					<label class="mdl-button mdl-js-button mdl-button--icon" for="fixed-header-drawer-exp">
+						<i class="material-icons">search</i>
+					</label>
+					<div class="mdl-textfield__expandable-holder">
+						<input class="mdl-textfield__input" type="text" name="sample" id="fixed-header-drawer-exp">
+					</div>
+				</div>
+				<div class="mdl-layout-spacer"></div>
+				<!-- ICONE DE NOTIFICAÇÃO -->
+				<button id="notificacao" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mr-3">
+					<i class="far fa-bell"></i>
+				</button>
+
+				<ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="notificacao">
+					<li class="mdl-menu__item"><i class="fas fa-user"></i>&nbsp;&nbsp; teste</li>
+					<li class="mdl-menu__item"><i class="fas fa-user"></i>&nbsp;&nbsp; teste</li>
+					<li class="mdl-menu__item"><i class="fas fa-user"></i>&nbsp;&nbsp; teste</li>
+					<li class="mdl-menu__item"><i class="fas fa-user"></i>&nbsp;&nbsp; teste</li>
+					<li class="mdl-menu__item"><i class="fas fa-sign-out-alt"></i>&nbsp;&nbsp; teste</li>
+				</ul>
+				<!-- FIM DA NOTIFICAÇÃO -->
+
+				<!-- ICONE DO MENU DO NAVBAR -->
+				<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="logout">
+					<i class="material-icons">more_vert</i>
+				</button>
+
+				<ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="logout">
+					<li class="mdl-menu__item"><i class="fas fa-user"></i>&nbsp;&nbsp; Perfil</li>
+					<li class="mdl-menu__item"><i class="fas fa-sign-out-alt"></i>&nbsp;&nbsp; Sair</li>
+				</ul>
+				<!-- ICONE DO MENU DO NAVBAR -->
+			</div>
+		</header>
+		<!--INICIO DO MENU LATERAL -->
+		<div class="mdl-layout__drawer">
+			<!-- IMAGEM DO MENU -->
+			<div class="ml-4 mt-3">
+				<img src="img/avatar-1.jpeg" style="width: 80px; border-radius: 50px;">    
+				<span class="small">&nbsp;&nbsp; None usuario</span><br>
+			</div>
+			<hr>
+			<!-- ITENS DO MENU -->
+			<nav class="mdl-navigation">
+				<span class="ml-3 text-muted">Dashboard</span>
+				<!-- LINK DE CHAMADOS -->
+				<ul class="navbar-nav navbar-sidenav" id="linksaccordion">
+					<li class="nav-item">
+						<a class="mdl-navigation__link link-decoracao texto-preto" data-toggle="collapse" data-parent="#linksaccordion" href="#linkchamados"><i class="fas fa-ticket-alt"></i>&nbsp;&nbsp;&nbsp; Chamados <i class="fas fa-angle-right ml-5"></i></a>
+						<!-- SUB LINK DE CHAMADOS -->
+						<ul class="sidenav-second-level collapse p-0 m-0" id="linkchamados">
+							<a href="login.html" class="mdl-navigation__link link-decoracao texto-preto">Todos</a>
+							<a href="login.html" class="mdl-navigation__link link-decoracao texto-preto">Aberto</a>
+							<a href="recuperar.html" class="mdl-navigation__link link-decoracao texto-preto">Aguardando</a>
+								<a href="registro.html" class="mdl-navigation__link link-decoracao texto-preto">Finalizados</a>
+						</ul> 
+					</li>
+				</ul>
+				<!--ITENS DO MEUS CHAMADOS -->
+				<ul class="navbar-nav navbar-sidenav" id="linksaccordion">
+					<li class="nav-item">
+						<a class="mdl-navigation__link link-decoracao texto-preto" data-toggle="collapse" data-parent="#linksaccordion" href="#linkmeuchamado"><i class="fas fa-chart-line"></i>&nbsp;&nbsp;&nbsp; Meu chamados &nbsp;&nbsp;<i class="fas fa-angle-right ml-2"></i></a>
+						<!-- SUB LINK DO MEU CHAMADOS -->
+						<ul class="sidenav-second-level collapse p-0 m-0" id="linkmeuchamado">
+							<a href="login.html" class="mdl-navigation__link link-decoracao texto-preto">Todos</a>
+							<a href="login.html" class="mdl-navigation__link link-decoracao texto-preto">Aberto</a>
+							<a href="recuperar.html" class="mdl-navigation__link link-decoracao texto-preto">Aguardando</a>
+							<a href="registro.html" class="mdl-navigation__link link-decoracao texto-preto">Finalizados</a>
+						</ul> 
+					</li>
+				</ul>
+				<!-- ITEN DO USUARIOS -->
+				<ul class="navbar-nav navbar-sidenav" id="linksaccordion">
+					<li class="nav-item">
+						<a class="mdl-navigation__link link-decoracao texto-preto" data-toggle="collapse" data-parent="#linksaccordion" href="#linkusuario"><i class="fas fa-users"></i>&nbsp;&nbsp;&nbsp; Cliente <i class="fas fa-angle-right ml-esq"></i></a>
+						<!-- SUB LINK DO MEU CHAMADOS -->
+						<ul class="sidenav-second-level collapse p-0 m-0" id="linkusuario">
+							<a href="login.html" class="mdl-navigation__link link-decoracao texto-preto">Novo cliente</a>
+							<a href="login.html" class="mdl-navigation__link link-decoracao texto-preto">Empresas</a>
+							<a href="recuperar.html" class="mdl-navigation__link link-decoracao texto-preto">Novo</a>
+						</ul> 
+					</li>
+				</ul>
+
+				<a class="mdl-navigation__link link-decoracao texto-preto" href=""><i class="fas fa-copy"></i>&nbsp;&nbsp;&nbsp; Exemplos</a>
+				<span class="ml-3 text-muted">Fornecedor</span>
+				<a class="mdl-navigation__link link-decoracao texto-preto" href=""><i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp; Fornecedor</a>
+				<a class="mdl-navigation__link link-decoracao texto-preto" href=""><i class="fas fa-laptop"></i>&nbsp;&nbsp;&nbsp; Perifericos</a>
+				<a class="mdl-navigation__link link-decoracao texto-preto" href=""><i class="fas fa-book"></i>&nbsp;&nbsp;&nbsp; Artigo</a>
+				<a class="mdl-navigation__link link-decoracao texto-preto" href=""><i class="fas fa-calendar-alt"></i></i>&nbsp;&nbsp;&nbsp; Agenda</a>
+			</nav>
+		</div>
+
+		<!-- CONTEUDO DAS PAGINAS -->
+		<main class="mdl-layout__content py-3">
+			<div class="page-content">
+				<div class="container-fluid">
+					<div class="row">
+						<!-- CARD TOTAL DE USUARIO -->
+						<div class="col-md-3 col-sm-6 col-12">
+							<div class="card bg-light">
+								<div class="row">
+									<div class="col-4">
+										<div class="card bg-nav text-center m-3" style="width: 5rem;">
+											<a href=""><i class="fas fa-user-ninja fa-2x p-4 text-light"></i></a>
+										</div>	
+									</div>
+									<div class="col-8 mt-3">
+										<p class="text-center m-0 p-0"><strong>Total de usuario</strong></p>
+										<h5 class="text-center m-2 p-0"><strong>40</strong></h5>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- CARD TOTAL NOVOS CHAMADOS -->
+						<div class="col-md-3 col-sm-6 col-12">
+							<div class="card bg-light">
+								<div class="row">
+									<div class="col-4">
+										<div class="card bg-primary text-center m-3" style="width: 5rem;">
+											<a href=""><i class="fas fa-plus fa-2x p-4 text-light"></i></a>
+										</div>	
+									</div>
+									<div class="col-8 mt-3">
+										<p class="text-center m-0 p-0"><strong>Novos chamados</strong></p>
+										<h5 class="text-center m-2 p-0"><strong>15</strong></h5>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- CARD CHAMADOS EM ABERTOS -->
+						<div class="col-md-3 col-sm-6 col-12">
+							<div class="card bg-light">
+								<div class="row">
+									<div class="col-4">
+										<div class="card bg-danger text-center m-3" style="width: 5rem;">
+											<a href=""><i class="fas fa-copy fa-2x p-4 text-light"></i></a>
+										</div>	
+									</div>
+									<div class="col-8 mt-3">
+										<p class="text-center m-0 p-0"><strong>Chamados em aberto</strong></p>
+										<h5 class="text-center m-2 p-0"><strong>10</strong></h5>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- CARD TOTAL AGUARDANDO -->
+						<div class="col-md-3 col-sm-6 col-12">
+							<div class="card bg-light">
+								<div class="row">
+									<div class="col-4">
+										<div class="card bg-warning text-center m-3" style="width: 5rem;">
+											<a href=""><i class="far fa-clock fa-2x p-4 text-light"></i></a>
+										</div>	
+									</div>
+									<div class="col-8 mt-3">
+										<p class="text-center m-0 p-0"><strong>Total aguardando</strong></p>
+										<h5 class="text-center m-2 p-0"><strong>40</strong></h5>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+
+
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/animate.js"></script>
+		<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>	
+
+		<!-- TROCA O ICONE DA SETA DO MENU QUANDO CLICADO -->
+		<script type="text/javascript">
+			$(document).on("click", "#linksaccordion", function(){
+				if($(this).find("i").hasClass("fas fa-angle-right")){
+					$(this).find("i").removeClass("fas fa-angle-right").addClass("fas fa-angle-down");
+				}else if($(this).find("i").hasClass("fas fa-angle-down")){
+					$(this).find("i").removeClass("fas fa-angle-down").addClass("fas fa-angle-right");
+				}else{
+					$(this).find("i").removeClass("fa-sort-up").addClass("fa-sort-down");
+				}
+			});
+		</script>
+
+		<!-- <script type="text/javascript">
+			function myMove() {
+				var elem = document.getElementById("myAnimation");   
+				var pos = 0;
+				var id = setInterval(frame, 05);
+				function frame() {
+					if (pos == 350) {
+						clearInterval(id);
+					} else {
+						pos++; 
+						// elem.style.top = pos + 'px'; 
+						elem.style.left = pos + 'px'; 
+					}
+				}
+			}
+		</script> -->
+	</body>
+	</html>

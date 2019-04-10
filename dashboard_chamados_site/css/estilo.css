@@ -1,0 +1,23 @@
+/*efeito sombra*/
+.sombra{
+	box-shadow:0 1rem 3rem rgba(0,0,0,2)!important
+}
+.sombra-h:hover{
+	box-shadow:1rem 1rem 1rem rgba(0,0,0,0.5)!important
+}
+/*troca o modelo do cursor*/
+.cursor-h{
+	cursor: pointer;
+}
+/* efeito gradiente*/
+/*site que faz gradiente https://gradients.cssgears.com/*/
+.bg-gradiente{
+	background:linear-gradient(135deg, #0FF0B3 0%,#036ed9 100%);
+}
+
+/*efeito de tranferencia*/
+/*usei a cor preta (0, 0, 0,0.7), caso queira outra cor e so colocar ente os parenteses e mudar o final*/
+.bg-transparente{
+	background-color: rgba(0, 0, 0,0.7);
+}
+
