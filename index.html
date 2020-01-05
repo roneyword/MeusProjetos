@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>font editable</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css?Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background: #07d1ff;
+      }
+
+      h1 {
+        position: relative;
+        line-height: 1.1em;
+        outline: none;
+        font-size: 10em;
+        color: white;
+        text-align: center;
+        user-select: none;
+        transform: rotate(-10deg) skewX(20deg);
+        text-shadow: -1px 1px rgb(218, 213, 213), -2px 2px rgb(218, 213, 213),
+          -3px 3px rgb(218, 213, 213), -4px 4px rgb(218, 213, 213),
+          -5px 5px rgb(218, 213, 213), -6px 6px rgb(218, 213, 213),
+          -7px 7px rgb(218, 213, 213), -8px 8px rgb(218, 213, 213),
+          -9px 9px rgb(218, 213, 213), -10px 10px rgb(218, 213, 213),
+          -11px 11px rgb(218, 213, 213), -12px 12px rgb(218, 213, 213),
+          -13px 13px rgb(218, 213, 213), -17px 17px rgba(0, 0, 0, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <h1 contenteditable="true">Typography</h1>
+  </body>
+</html>
